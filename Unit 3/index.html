@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit 03 - Formulários</title>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <p>Estrutura básica de um formulário:</p>
+        <p>Tag 'form'</p>
+        <form>
+
+            <h2>Tipos de Inputs</h2>
+            
+            <h4>Texto('text')</h4>
+            Nome: <input type="text" name="nome">
+
+            <h4>Senha('password')</h4>
+            Senha: <input type="password" name="senha">
+
+            <h4>Email(email)</h4>
+            Email: <input type="email" name="email">
+
+            <h4> Número(number)</h4>
+            Idade: <input type="number" name="idade" min="1" max="100">
+
+            <h4>URL(url)</h4>
+            Website: <input type="url" name="site">
+
+            <h4>Data(date)</h4>
+            Data de Nascimento: <input type="date" name="nascimento">
+
+            <h4>Checkbox(checkbox)</h4>
+            Você concorda com os termos: <input type="checkbox" name="termos">
+
+            <h4> Radio(radio)</h4>
+            <p> Gênero: </p>
+            <input type="radio" name="genero" value="masculino"> Masculino <br>
+            <input type="radio" name="genero" value="feminino"> Feminino <br>
+
+            <h4>Arquivo(file)</h4>
+            Selecione um arquivo: 
+            <input type="file" name="arquivo">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+
+        <h1>Exemplo Formulário:</h1>
+
+        <h2>Formulário de Cadastro</h2>
+
+        <form action="" method="post">
+            Nome: <input type="text" name="nome" placeholder="Digite seu nome aqui" required><br><br>
+
+            Username: <input type="text" name="username" minlength="3" maxlength="8" required><br><br>
+
+            Senha: <input type="password" name="senha" required><br><br>
+
+            Email: <input type="email" name="email" required><br><br>
+
+            Idade: <input type="number" name="idade" min="1" max="100"><br><br>
+
+            LinkedIn: <input type="url" name="site" placeholder="Cole o link aqui"><br><br>
+
+            Data de Nascimento: <input type="date" name="nascimento"> <br><br>
+
+            Cargo: <input type="text" value="Gerente" readonly><br><br>
+
+            Segunda opção: <input type="text" value="Não aplicável" disabled> <br><br>
+
+            Escolha seu país:
+            <select name="pais">
+                <option value="brasil">Brasil</option>
+                <option value="eua"> Estados Unidos </option>
+                <option value="canada"> Canadá </option>
+            </select><br><br>
+
+            Gênero:<br>
+            <input type="radio" name="genero" value="masculino"> Masculino <br>
+            <input type="radio" name="genero" value="feminino"> Feminino <br> <br>
+
+            Você concorda com os termos da empresa: 
+            <input type="checkbox" name="termos"> <br><br>
+
+            Foto: <input type="file" name="foto"><br><br>
+
+            Mensagem:<br>
+            <textarea name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui."></textarea> <br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
